@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Add this to the <head> section of your HTML -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="logo">Tisha</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="home-container">
+      <div class="home-image">
+        <img src="assets/images/tishaphoto.pdf.jpg" alt="Tisha Gupta">
+      </div>
+      <div class="home-text">
+        <h1>
+          HELLO, I'M <span class="highlight">TISHA GUPTA</span>
+        </h1>
+        <h2>
+          A <span class="highlight" id="dynamic-word">CREATIVE</span> FRONTEND DEVELOPER
+        </h2>
+        
+        
+        <p style="font-family: 'Arial', sans-serif; font-size: 18px;">
+          Passionate about crafting user-friendly, visually appealing web
+          experiences that leave an impact.
+        </p>
+        
+        <div class="btn-group">
+          <a href="assets/images/documents/FAANGPath_TishaResume.pdf" target="_blank" class="btn">View Resume</a>
+
+          <a href="#Projects" class="btn secondary">Explore Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>
+        Hello! I'm Tisha Gupta, a dedicated MCA student at MANIT, Bhopal, with a passion for crafting beautiful and functional web experiences. Here's a glimpse of my journey:
+      </p>
+      <div class="timeline">
+       
+        <div class="timeline-item" data-year="2021">
+          <span class="year">2020-2023</span>
+          <p>Started exploring coding during my BCA program from DAVV Indore.</p>
+        </div>
+        <div class="timeline-item" data-year="2024">
+          <span class="year">2023-2026</span>
+          <p>I cleared NIMCET and secured admission at NIT BHOPAL for the MCA program and started contributing to innovative projects, enhancing my skills in web development and problem-solving.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+        <p>Markup language for structuring content.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <p>Styling for making web pages visually appealing.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+        <p>Interactive and dynamic website behavior.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h3>React.js</h3>
+        <p>Library for building user interfaces.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+        <p>Server-side runtime for JavaScript.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-java"></i>
+        <h3>Java</h3>
+        <p>Robust, platform-independent programming language.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+        <p>Versatile language for web development and data science.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-database"></i>
+        <h3>SQL</h3>
+        <p>Managing and querying relational databases.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="Projects">
+    <h2>My Projects</h2>
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="assets/images/Screenshot (24).png" alt="CrowdFunding Platform" class="portfolio-image" />
+        <div class="portfolio-description">
+          <h3>CrowdFunding Platform</h3>
+          <p>This is a platform for funding projects.</p>
+          <p>It includes features for creating and managing campaigns.</p>
+          <p>Users can donate or invest in their favorite campaigns.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/images/Screenshot (25).png" alt="Farm To Table" class="portfolio-image" />
+        <div class="portfolio-description">
+          <h3>Farm To Table</h3>
+          <p>A platform to connect local farms with consumers.</p>
+          <p>It allows users to buy fresh produce directly from farmers.</p>
+          <p>The aim is to support sustainable agriculture.</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="assets/images/Screenshot (26).png" alt="Random Jokes" class="portfolio-image" />
+        <div class="portfolio-description">
+          <h3>Random Jokes</h3>
+          <p>A fun project that displays random jokes.</p>
+          <p>Users can click a button to see a new joke every time.</p>
+          <p>It pulls jokes from an API for dynamic content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-container">
+      <div class="certificate-item">
+        <img src="assets/images/image.png" alt="Certificate 1">
+        <p>IBM SkillsBuild Summer Internship Program - Frontend Development</p>
+      </div>
+      <div class="certificate-item">
+        <img src="assets/images/hackonamazon.jpg" alt="Certificate 2">
+        <p>Amazon Participation Certificate</p>
+      </div>
+      <!-- Add more certificates as needed -->
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="footer-container">
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+      </div>
+    
+      <!-- Contact Info Section -->
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>Email: tishagupta19nov@gmail.com</p>
+        <p>Phone: +91 9660172279</p>
+        <p>Location: Bhopal, India</p>
+      </div>
+    
+      <!-- Social Media Section -->
+      <div class="footer-section">
+        <h4>Stay Connected</h4>
+        <div class="social-icons">
+          <a href="mailto:tishagupta19nov@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/tisha-gupta-762626283/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/tishaguptaa/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Tisha Gupta. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  
+  
+ 
+  <script src="script.js" defer></script>
+</body>
+
+
+
+</html>
