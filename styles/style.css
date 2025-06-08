@@ -825,3 +825,15 @@ header nav ul li a.active {
     padding: 0 10px;
   }
 }
+@media (max-width: 600px) {
+  .certificate-section {
+    width: 100%;
+    padding: 10px;
+    /* Adjust font sizes and layout */
+  }
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* or suitable */
+  }
+}
