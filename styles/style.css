@@ -840,3 +840,24 @@ header nav ul li a.active {
 html {
   scroll-behavior: smooth;
 }
+/* Certificate embeds & items responsive */
+@media (max-width: 768px) {
+  #certificates .certificate-item {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  #certificates .certificate-item embed {
+    width: 100%;
+    height: auto; /* let height scale */
+    min-height: 300px; /* optional for readability */
+  }
+}
+@media (max-width: 768px) {
+  #certificates .certificates-container {
+    display: block; /* stack items vertically */
+  }
+}
+.certificate-item {
+  overflow-x: auto;
+}
