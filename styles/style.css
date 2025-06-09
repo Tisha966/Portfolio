@@ -837,3 +837,6 @@ header nav ul li a.active {
     max-width: 300px; /* or suitable */
   }
 }
+html {
+  scroll-behavior: smooth;
+}
