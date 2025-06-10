@@ -865,51 +865,31 @@ html {
 .certificates-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
+  padding: 20px;
 }
 
 .certificate-item {
-  width: 100%;
-  max-width: 400px;
-  margin: 10px auto;
+  flex: 1 1 calc(33.33% - 20px); /* 3 items per row with spacing */
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
-.certificate-item embed {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4; /* keeps PDF visible & proportionate */
-  border: 1px solid #333;
-}
-
-/* Mobile tweaks */
+/* Responsive: stack on small screens */
 @media (max-width: 768px) {
-  .certificates-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .certificate-item {
-    width: 90%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-
-  .certificate-item embed {
-    aspect-ratio: 3 / 4;
-    height: auto;
-  }
-}
-.certificates-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
 }
 
 .certificate-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
-
