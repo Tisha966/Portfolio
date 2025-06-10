@@ -959,3 +959,58 @@ nav ul li .active {
     width: 90%;
   }
 }
+nav {
+  overflow-x: auto; /* allow scrolling if needed */
+  white-space: nowrap;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* reduce gap for smaller screens */
+  padding: 10px 0;
+  margin: 0;
+  flex-wrap: nowrap; /* prevent wrapping */
+  overflow-x: auto;  /* horizontal scroll if needed */
+  scrollbar-width: none; /* for Firefox */
+}
+
+nav ul::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari */
+}
+
+nav ul li {
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+nav ul li a,
+nav ul li span {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 14px; /* smaller font on mobile */
+  white-space: nowrap;
+}
+
+nav ul li a:hover,
+nav ul li span:hover,
+nav ul li .active {
+  background-color: #333;
+}
+@media (min-width: 768px) {
+  nav ul {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* allow wrapping on big screens */
+  }
+
+  nav ul li a,
+  nav ul li span {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}
