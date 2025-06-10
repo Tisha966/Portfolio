@@ -778,7 +778,7 @@ header nav ul li a.active {
   margin-top: 10px;
   padding: 6px 12px;
   color: black;
-  background-color: #ffd000;
+  background-color: black;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
@@ -861,3 +861,55 @@ html {
 .certificate-item {
   overflow-x: auto;
 }
+/* Certificate section responsiveness */
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.certificate-item {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.certificate-item embed {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4; /* keeps PDF visible & proportionate */
+  border: 1px solid #333;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .certificates-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certificate-item {
+    width: 90%;
+  }
+
+  .certificate-item embed {
+    aspect-ratio: 3 / 4;
+    height: auto;
+  }
+}
+.certificates-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.certificate-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
