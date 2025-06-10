@@ -1033,10 +1033,39 @@ nav ul li .active {
   margin-bottom: 10px;
   color: #ffd000;
 }
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Desktop: 4 per row */
+  gap: 30px;
+  padding: 30px;
+}
+
+.skill-card {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s;
+}
+.skill-card i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffd000;
+}
+.skill-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+.skill-card p {
+  font-size: 0.9rem;
+}
+
+/* 🔹 Mobile Responsive – still 4 per row, smaller but full content */
 @media (max-width: 768px) {
   .skills-container {
-    grid-template-columns: repeat(4, 1fr); /* Force 4 per row on small screens too */
-    gap: 8px;
+    grid-template-columns: repeat(4, 1fr); /* Still 4 per row */
+    gap: 10px;
     padding: 10px;
   }
 
@@ -1046,11 +1075,16 @@ nav ul li .active {
   }
 
   .skill-card i {
-    font-size: 1.2rem;
-    margin-bottom: 4px;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+
+  .skill-card h3 {
+    font-size: 0.9rem;
   }
 
   .skill-card p {
-    display: none; /* Hide paragraph for compactness */
+    font-size: 0.7rem;
+    margin: 0;
   }
 }
