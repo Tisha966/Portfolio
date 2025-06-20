@@ -1136,3 +1136,50 @@ nav ul li a:hover {
     justify-content: center;
   }
 }
+.portfolio-description a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #ffcc00; /* yellow */
+  color: #000; /* black */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-description a:hover {
+  background-color: #e6b800; /* darker yellow */
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.certificate-item {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* default for mobile */
+  max-width: 600px;
+}
+
+.certificate-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.3);
+}
+
+/* Desktop view: 3 in a row */
+@media (min-width: 992px) {
+  .certificate-item {
+    width: 30%;
+  }
+}
