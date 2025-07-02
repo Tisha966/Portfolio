@@ -1190,3 +1190,8 @@ nav ul li a:hover {
   object-fit: contain;
   border-radius: 10px;
 }
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
