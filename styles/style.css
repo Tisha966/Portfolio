@@ -1195,3 +1195,95 @@ nav ul li a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+.more-info-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.more-info-btn:hover {
+  background-color: #666;
+}
+
+.more-details {
+  display: none;
+  margin-top: 10px;
+  background-color: #1a1a1a;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: left;
+}
+
+.more-details.active {
+  display: block;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tech-tag {
+  background-color: #2e2e2e;
+  color: #ccc;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.education-box {
+  background-color: #111;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.education-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #ffd000;
+}
+
+.education-box .year {
+  font-size: 0.9rem;
+  color: #ccc;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.education-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
